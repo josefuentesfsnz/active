@@ -4,51 +4,99 @@
     <title>index</title>
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-responsive.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.css">
+    <script type="text/javascript" scr="bootstrap/js/bootstrap.js"></script>
     <meta charset="utf-8">
-    <meta charset="viewport" content="width=device-width, initial-scale?1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="text/javascript">
         function select() {
-            var uno = document.getElementById("demo");
+            document.getElementById("demo").style.visibility = "inherit";
+
         }
     </script>
 </head>
 <body>
+        <!--                                      -->
+        <!--                                      -->
+        <!--                                      -->
+        <!--            barra de navegacion       -->
+        <!--                                      -->
+        <!--                                      -->
+        <!--                                      -->
+        <!--                                      -->
+
+
 
     <div class="container">
-        <div class="row">
-            <br>
-            <div class="span12 well" >
-                <div class="row">
+<div class="btn-group" role="group" aria-label="...">
+  <button type="button" class="btn btn-default">1</button>
+  <button type="button" class="btn btn-default">2</button>
 
-                    <div class="span4">
-                        <button type="button" class="btn btn-primary btn-lg btn-block">
-                            <h2>
-                            Configuración de Hardware
-                            </h2>
-                        </button>
-                    </div>
-                    <div class="span4">
-                        <button type="button" class="btn btn-success btn-lg btn-block">
-                            <h2>
-                            Configuracion de software
-                            </h2>
-                        </button>
-                    </div>
-                    <div class="span4">
-                        <button type="button" class="btn btn-danger btn-lg btn-block">
-                            <h2>
-                            Reparar<br>Errores
-                            </h2>
-                        </button>
-                    </div>
+  <div class="btn-group" role="group">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Dropdown
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+      <li><a href="#">Dropdown link</a></li>
+      <li><a href="#">Dropdown link</a></li>
+    </ul>
+  </div>
+</div>
+
+
+
+        <div class="row span12">
+            <br>
+            <div class="btn-toolbar row" role="group" aria-label="Close">
+            <div class="span4">
+                <button type="button" class="btn btn-primary btn-lg btn-block" onclick="select()"  >
+                    <h4>
+                    Configuración de Hardware
+                    </h4>
+                </button>
+            </div>
+            <div class="span4">
+                <button type="button" class="glyphicon  btn btn-success btn-lg btn-block">
+                    <h4>
+                    Configuración de Software
+                    </h4>
+                </button>
+            </div>
+            <div class="span4">
+                <button type="button" class="btn btn-danger btn-lg btn-block">
+                    <h4>
+                    Reparar Errores
+                    </h4>
+                </button>
+            </div>
+                
+               
+              
+            </div>
+        </div>
+        <div class="btn-toolbar" role="toolbar" aria-label="...">
+  <div class="btn-group" role="group" aria-label="true">...</div>
+  <div class="btn-group" role="group" aria-label="true">...</div>
+  <div class="btn-group" role="group" aria-label="true">...</div>
+</div>
+        <!--                                      -->
+        <!--                                      -->
+        <!--                                      -->
+        <!--            CONTENIDO                 -->
+        <!--                                      -->
+        <!--                                      -->
+        <!--                                      -->
+        <!--                                      -->
+
+        <div class="row">
+            <div class="span12 well" id="demo" style="visibility: hidden;">
+                <div class="span3">
+                    <div class="panel panel-primary">algo</div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="span12 well" id="demo">
-                <h1>asdasdasdas</h1>
-            </div>
-        </div>
+
     </div>
 </body>
 </html>
